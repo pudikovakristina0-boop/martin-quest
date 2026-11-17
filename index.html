@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="sk" class="manual-locked">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Martin Quest — vizuálna identita</title>
+  <meta name="description" content="Online dizajn manuál aplikácie Martin Quest. Finálne logo, farby, typografia, ikony a mobilné náhľady interaktívneho sprievodcu mestom Martin.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#012962">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/nunito-variable.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="access.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="access-gate" id="access-gate" aria-labelledby="access-title">
+    <div class="access-card">
+      <img class="access-logo" src="assets/logo.svg" alt="Martin Quest" width="206" height="88">
+      <span class="access-lock" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#lock"></use></svg></span>
+      <h1 id="access-title">Pripravené na<br>objavovanie.</h1>
+      <p class="access-intro">Zadaj heslo a pozri si vizuálnu identitu aplikácie Martin Quest.</p>
+      <form id="access-form">
+        <label for="access-password">Heslo</label>
+        <div class="access-field"><input id="access-password" name="password" type="password" autocomplete="current-password" required aria-describedby="access-error" spellcheck="false" autocapitalize="none"><button id="access-visibility" type="button" aria-label="Zobraziť heslo" aria-pressed="false">Zobraziť</button></div>
+        <p id="access-error" class="access-error" role="status" aria-live="polite"></p>
+        <button class="button access-submit" type="submit">Vstúpiť do manuálu <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow"></use></svg></button>
+      </form>
+      <span class="access-caption">Online manuál vizuálnej identity</span>
+      <noscript><p class="access-noscript">Na zadanie hesla je potrebné povoliť JavaScript.</p></noscript>
+    </div>
+  </main>
+  <div id="manual-content" hidden inert>
+  <a class="skip" href="#main">Preskočiť na obsah</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#main" aria-label="Martin Quest — úvod"><img src="assets/logo.svg" alt="Martin Quest" width="165" height="71"></a>
+      <button class="menu-button icon-button" aria-label="Otvoriť navigáciu" aria-expanded="false" aria-controls="main-nav"><svg class="icon"><use href="assets/icons.svg#menu"></use></svg></button>
+      <nav id="main-nav" aria-label="Sekcie manuálu">
+        <a href="#logo">Logo</a><a href="#farby">Farby</a><a href="#ikona">Ikona</a><a href="#ikony">Ikony</a><a href="#aplikacia">V aplikácii</a>
+      </nav>
+      <a class="button header-download" href="assets/martin-quest-podklady.zip" download><svg class="icon"><use href="assets/icons.svg#download"></use></svg><span>Stiahnuť podklady</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title" tabindex="-1">Identita, ktorá<br>vedie mestom.</h1>
+        <p>Vizuálna identita aplikácie Martin Quest. Od prvého bodu na mape po objavený príbeh.</p>
+        <a class="button button-large" href="#logo">Preskúmať identitu <svg class="icon"><use href="assets/icons.svg#arrow"></use></svg></a>
+      </div>
+      <div class="hero-visual"><div class="phone hero-phone" id="hero-phone" aria-label="Náhľad mapy aplikácie Martin Quest"></div></div>
+    </section>
+
+    <section id="logo" class="section wrap" aria-labelledby="logo-title">
+      <p class="section-index"><span>01</span> / Logo a symbol</p>
+      <h2 id="logo-title">Jedna značka. Každá cesta.</h2>
+      <div class="logo-panels">
+        <div class="logo-panel light-panel">
+          <div class="logo-display"><img src="assets/logo.svg" alt="Finálne farebné logo Martin Quest" width="550" height="236"></div>
+          <div class="logo-panel-bottom"><span>Na svetlom podklade</span><a href="assets/logo.svg" download aria-label="Stiahnuť farebné logo SVG">SVG <svg class="icon"><use href="assets/icons.svg#download"></use></svg></a></div>
+        </div>
+        <div class="logo-panel dark-panel">
+          <div class="logo-display"><img src="assets/logo-white.svg" alt="Opticky odľahčené biele logo Martin Quest" width="550" height="236"></div>
+          <div class="logo-panel-bottom"><span>Opticky upravená biela verzia</span><a href="assets/logo-white.svg" download aria-label="Stiahnuť opticky upravené biele logo SVG">SVG <svg class="icon"><use href="assets/icons.svg#download"></use></svg></a></div>
+        </div>
+      </div>
+      <div class="symbol-line">
+        <div class="symbol-examples"><img src="assets/symbol.svg" alt="Samostatný farebný symbol" width="66" height="66"><span class="symbol-dark"><img src="assets/symbol-white.svg" alt="Samostatný biely symbol" width="66" height="66"></span></div>
+        <div><h3>Q, vrchy a smer objavovania.</h3><p>Samostatný symbol funguje v ikone, na mape aj v drobných detailoch. Na tmavom podklade používame jemnejšie biele ťahy.</p></div>
+        <a class="text-link" href="assets/symbol.svg" download>Stiahnuť symbol <svg class="icon"><use href="assets/icons.svg#download"></use></svg></a>
+      </div>
+    </section>
+
+    <section id="farby" class="section wrap" aria-labelledby="color-title">
+      <p class="section-index"><span>02</span> / Farby a typografia</p>
+      <h2 id="color-title">Modrá vedie. Červená objavuje.</h2>
+      <p class="section-lead">Farby majú svoju úlohu — od pokojnej orientácie po ďalší krok.</p>
+      <div class="palette" id="palette" aria-label="Farebná paleta — kliknutím skopírujete HEX kód"></div>
+      <div class="color-roles">
+        <div><span class="role-icon"><svg class="icon"><use href="assets/icons.svg#book"></use></svg></span><div><h3>Tmavomodrá pre texty</h3><p>Názvy miest, príbehy a dôležité informácie.</p></div></div>
+        <div><span class="role-icon"><svg class="icon"><use href="assets/icons.svg#map"></use></svg></span><div><h3>Modrá pre navigáciu</h3><p>Mapa, aktívne prvky a tlačidlá rozhrania.</p></div></div>
+        <div><span class="role-icon red-icon"><svg class="icon"><use href="assets/icons.svg#qr"></use></svg></span><div><h3>Červená pre ďalší krok</h3><p>QR akcia, odmeny a herné akcenty.</p></div></div>
+      </div>
+      <div class="typography">
+        <div class="type-specimen"><div class="type-name"><span>Aa</span><h3>Nunito</h3><small>Oblé tvary. Zrozumiteľný hlas.</small></div><div class="type-lines"><strong>Objav Martin.</strong><h4>Slovenská národná knižnica</h4><p>Spoznávaj kultúrne miesta v Martine, plň výzvy a zbieraj odmeny.</p><span class="type-weights">400 Regular · 600 SemiBold · 800 ExtraBold</span></div></div>
+        <article class="place-example"><span class="place-icon"><svg class="icon"><use href="assets/icons.svg#book"></use></svg></span><div><h3>Slovenská národná knižnica</h3><p class="category">Knižnica</p><p>Národná pamäťová inštitúcia, ktorá uchováva knižné dedičstvo Slovenska.</p></div><div class="place-example-bottom"><button class="button" data-go="place">Zobraziť miesto <svg class="icon"><use href="assets/icons.svg#arrow"></use></svg></button><strong class="reward-text">Kniha · +100 XP</strong></div></article>
+      </div>
+    </section>
+
+    <section id="ikona" class="section icon-section" aria-labelledby="app-icon-title"><div class="wrap app-icon-layout">
+      <div class="app-icon-content"><p class="section-index"><span>03</span> / Ikona aplikácie</p><h2 id="app-icon-title">Spoznáš ju aj na<br>malej obrazovke.</h2><p class="section-lead">Tri podoby jedného symbolu. Porovnaj ich v plnej veľkosti aj medzi ostatnými ikonami.</p>
+        <div class="variant-controls" role="group" aria-label="Vybrať variant ikony"><button class="selected" data-variant="dark" aria-pressed="true">Tmavá</button><button data-variant="light" aria-pressed="false">Svetlá</button><button data-variant="blue" aria-pressed="false">Modrá</button></div>
+        <a id="icon-download" class="text-link icon-download" href="assets/app-icon-dark.svg" download>Stiahnuť SVG <svg class="icon"><use href="assets/icons.svg#download"></use></svg></a>
+      </div>
+      <div class="icon-specimens" aria-label="Porovnanie veľkých ikon a ikon s rozmerom 32 pixelov"><div class="icon-size-label">Veľký náhľad</div><div class="icon-large-row"></div><div class="icon-size-label">32 px</div><div class="icon-small-row"></div></div>
+      <div class="home-phone" aria-label="Ikony Martin Quest na ukážke domovskej obrazovky"><div class="home-status"><b>9:41</b><span class="camera"></span><span>••• ▰</span></div><div class="home-app-grid" id="home-apps"></div><p class="home-caption">Domovská obrazovka</p><div class="home-dock"><span></span></div></div>
+    </div></section>
+
+    <section id="ikony" class="section icon-gallery-section" aria-labelledby="ui-icons-title"><div class="wrap">
+      <p class="section-index"><span>04</span> / Ikony v rozhraní</p><h2 id="ui-icons-title">Rovnaký rukopis. Jasný význam.</h2><p class="section-lead">Zaoblené zakončenia, jednotný ťah 2 px a spoločná mriežka 24 × 24 px.</p>
+      <div class="icon-gallery-layout"><div class="icon-gallery" id="icon-gallery"></div><aside class="nav-example"><h3>Ukážka spodnej navigácie</h3><div id="nav-specimen"></div><p id="nav-description" aria-live="polite">Mapa — miesta, ktoré čakajú na objavenie.</p></aside></div>
+      <a href="assets/martin-quest-ikony.zip" download class="text-link">Stiahnuť celú sadu ikon <svg class="icon"><use href="assets/icons.svg#download"></use></svg></a>
+    </div></section>
+
+    <section id="aplikacia" class="section app-flow-section" aria-labelledby="app-flow-title"><div class="wrap flow-layout">
+      <div class="flow-copy"><p class="section-index"><span>05</span> / V aplikácii</p><h2 id="app-flow-title">Od prvého bodu po vlastný príbeh.</h2><p>Martin Quest prepája mapu mesta, príbehy jeho miest a tematické questy do jedného hravého zážitku.</p><p class="source-note">Náhľady vychádzajú z obsahu pracovnej verzie. Vyber krok alebo vyskúšaj navigáciu.</p><span class="red-line" aria-hidden="true"></span></div>
+      <div class="flow-phones" id="flow-phones">
+        <div class="flow-item active" data-step="0"><div class="phone flow-phone" id="flow-map" aria-label="Obrazovka 1 — mapa"></div></div>
+        <div class="flow-item" data-step="1"><div class="phone flow-phone" id="flow-place" aria-label="Obrazovka 2 — detail Slovenskej národnej knižnice"></div></div>
+        <div class="flow-item" data-step="2"><div class="phone flow-phone" id="flow-quests" aria-label="Obrazovka 3 — questy"></div></div>
+      </div>
+      <div class="flow-steps" role="group" aria-label="Vybrať obrazovku náhľadu"><button class="active" data-select-step="0" aria-pressed="true"><span>1</span> Mapa</button><button data-select-step="1" aria-pressed="false"><span>2</span> Miesto</button><button data-select-step="2" aria-pressed="false"><span>3</span> Questy</button></div>
+    </div></section>
+  </main>
+
+  <footer class="site-footer wrap"><div><strong>Martin Quest</strong><span>Online manuál vizuálnej identity</span></div><div class="footer-actions"><button class="text-link lock-manual" id="lock-manual" type="button"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#lock"></use></svg>Zamknúť manuál</button><a href="assets/martin-quest-podklady.zip" download class="button"><svg class="icon"><use href="assets/icons.svg#download"></use></svg>Stiahnuť podklady</a></div></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <dialog id="app-dialog"><button class="dialog-close icon-button" aria-label="Zavrieť okno"><svg class="icon"><use href="assets/icons.svg#close"></use></svg></button><div id="dialog-content"></div></dialog>
+  </div>
+</body>
+</html>

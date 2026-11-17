@@ -1,0 +1,19 @@
+MARTIN QUEST - VIZUALNA IDENTITA
+
+Logo a symbol: zdrojom je finalny subor MQ-logo4.ai.
+Biela verzia: samostatna opticka korekcia pre tmavy podklad.
+Farebna paleta: presne HEX hodnoty v palette.json; profil sRGB.
+Pismo: Nunito, variabilne rezy 200-1000. Licencia v OFL-Nunito.txt.
+Ikony: mriezka 24 x 24, obrys 2, oble zakoncenia a spoje.
+Ikony aplikacie: dark / light / blue, jednotny symbol.
+
+Obsah mobilnych nahladov je prevzaty zo screenshotov pracovnej verzie.
+Web je dizajnovy manual; nevykonava skenovanie QR, nenacitava polohu
+a neprehrava video, ktore nebolo sucastou podkladov.
+Mapa v nahlade pochadza z dodaneho prototypu, s uvedenim OpenStreetMap.
+
+Web: index.html, styles.css, app.js, access.js a assets patria spolu.
+Heslova brana je jednoducha JavaScriptova zabrana ako v In Her Words.
+Neobmedzuje priamy pristup k suborom; hostovany web zachovava sukromne
+prihlasenie cez ChatGPT. Heslo nie je sucastou tohto navodu.
+Pre lokalne prezeranie pouzite bezny staticky HTTP server.
